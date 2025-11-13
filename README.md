@@ -2,8 +2,6 @@
 
 ## Project Spec
 
-TODO: Write a project spec
-
 To start, I think that my general theme for this project will be something like a choose-your-own-adventure styled game or story. It would have to be a short choose-your-own-adventure because if it were a fully fletched-out choose-your-own-adventure, it would take way too long for this project (at least with juggling other classes at the same time). I'm thinking about making a few webpages to let the user get just a glimpse into choose-your-own-adventure-style games. My first thoughts on it are introducing the user to the fantasy world for the index.html page and then use the other pages for the more in-depth content.
 
 As to what the project is going to do, it'll be an interactive story that the user can (hopefully) enjoy. The user will be walked through a story and will also be able to interact with said story--with more than just a "next page" button. I'm hoping to implement some features like an inventory system for items that the user can and/or will pick up along their journey. I'm also thinking about making a small battle scene or two that the user will have to survive, then I would also implement a separate health pool for the user too. If their hp runs out, maybe I'll send them to the previous page with an alert or updated paragraph on the previous page saying that they lost and to try again. A good idea too would be to make it so that the user can discard a health potion to regain their life points again. Now that I'm thinking about it as I write this, to make the fights less linear and predictable, I could add in a random chance to hit function, possibly based off of user and monster stats. If I'm really adventerous, I could also implement multiple character classes to choose from (like a knight, mage, etc.).
@@ -18,6 +16,9 @@ Stretch goals for this kind of project span far and wide. It goes without saying
 
 ## Project Wireframe
 
-TODO: Replace the wireframe below with you own design.
-
-![wireframe](wireframe-example.png)
+![wireframe](/img/wireframe1.png)
+![wireframe](/img/wireframe2.png)
+![wireframe](/img/wireframe3.png)
+![wireframe](/img/wireframe4.png)
+![wireframe](/img/wireframe5.png)
+![wireframe](/img/wireframe6.png)
