@@ -1,4 +1,36 @@
-h1{
+/* h1{
   border-color: #d3e644;
   border-style: dashed;
+} */
+
+/* Changed default h1 from professor to my own h1 */
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* Referenced how to center a table at https://www.w3schools.com/howto/howto_css_table_center.asp */
+.center-classes {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+/* Centering table data <td> content (the classes and their descriptions) with ChatGPT */
+.classes {
+    max-width: 150px;     /* limits the width */
+    padding: 8px 12px;    /* spacing inside cells */
+    text-align: center;     /* aligns text inside cell */
+    white-space: normal;  /* prevents wrapping to a new line */
+    vertical-align: top;
+    overflow: visible;     /* hide overflow */
+}
+
+/* Center buttons found with help from ChatGPT */
+.center-class-choice {
+  display: block;
+  margin: 10px auto 0;
 }
