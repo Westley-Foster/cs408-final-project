@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Hello World!</title>
+  <title>An Adventurer's Quest</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
@@ -12,33 +12,33 @@
 <body>
 
   <!-- My own implementation (no ChatGPT) -->
-   <h1>Welcome to [World Name here]!</h1>
+  <h1>Welcome to An Adventurer's Quest!</h1>
 
-   <p>
-    Many come to [World’s Name] for many reasons. Honor, fame, riches, anything is said to be possible in this world of 
+  <p>
+    Many from far and wide come to the land of <strong>[Agraphyll]</strong> for many reasons. Honor, fame, riches, anything is said to be possible in this world of 
     possibilities. Be wary, though, for every chance at success, there is an equal chance of failure. The land is full of dangers,
     from unpredictable climates to fierce monsters. You can never be too safe when trying to find your way.
-   </p>
+  </p>
 
-   <p>
+  <p>
     You’re a local who grew up in <strong>Thornestowne</strong>, a small, remote village nestled by the Crystal Rivers, which wrap 
-    around the <strong>Prickling (or Twisting) Woods</strong> of the east province of [World's Name].  You lived on a small plot of 
+    around the <strong>Prickling (or Twisting) Woods</strong> of the east province of <strong>[Agraphyll]</strong>.  You lived on a small plot of 
     land, your parents providing by working the farm and some odd jobs around town. Once old enough, you also began helping with 
     the farm. You were content with your nice, cozy farmer’s life, until one day you began longing for something more, something 
     more thrilling and “unknown”. You decided you wanted to find yourself, and you knew you couldn’t do that by staying in 
     <strong>ThornesTown</strong>. You decide to head out on your own, aiming to reach the capital of the east province, 
     <strong>Lunevaria</strong> (pronounced “loon-var-ee-uh”), a bustling seaport city off the coast of the <strong>Lunar Oceans.</strong>
-   </p>
+  </p>
 
-   <p>
-    Hearing of the dangers beyond your hometown, you decide that you should prepare and train before leaving though. The size of 
+  <p>
+    Hearing of the dangers beyond your hometown, you first decide that you should prepare and train before leaving though. The size of 
     your town limits your options, though. You could train in the art of the sword, the arcane, or the shadows. After some thought, 
     you made your choice.
-   </p>
+  </p>
 
-   <p><strong>Please choose your class below</strong></p>
+  <p><strong>Please choose your class below</strong></p>
 
-   <table class="center-classes" aria-describedby="Table displays class names for the player and descriptions for each class. Also includes buttons for selecting and submitting the player's chosen class">
+  <table class="center-classes" aria-describedby="Table that displays class names for the player and descriptions for each class. Also includes buttons for selecting and submitting the player's chosen class">
     <thead>
       <tr>
         <th scope="col">Knight</th>
@@ -81,57 +81,9 @@
     </tbody>
    </table>
 
+  <!-- Found how to link to a separate HTML file with a button from w3schools.com -->
+  <button class="continue" onclick="document.location='intro.html'">Continue</button>
 
-  <!-- Implemented sourcing a JavaScript file with ChatGPT (all the below code) -->
-    <!-- ADD ITEM SECTION -->
-  <div class="add-container">
-    <h2>Add New Item to Database</h2>
-    <form class="add-form" id="add-form">
-      <div class="form-row">
-        <label for="put-id">ID:</label>
-        <input type="text" id="put-id" placeholder="Placeholder">
-      </div>
-
-      <div class="form-row">
-        <label for="put-name">Name:</label>
-        <input type="text" id="put-name" placeholder="Placeholder">
-      </div>
-
-      <div class="form-row">
-        <label for="put-price">Price:</label>
-        <input type="number" id="put-price" placeholder="Placeholder">
-      </div>
-
-      <button class="add-item" type="button" id="send-data">Add Item</button>
-    </form>
-  </div>
-
-  <!-- LOAD BUTTON -->
-  <div class="load-container">
-    <button id="load-data">Load Items</button>
-  </div>
-
-  <!-- TABLE -->
-  <table>
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody id="lambda-info"></tbody>
-  </table>
-
-  <!-- DELETE SECTION -->
-  <div class="delete-container">
-    <h2>Delete Item</h2>
-    <input id="delete-id" placeholder="Enter ID to delete">
-    <button id="delete-data">Delete</button>
-  </div>
-
-  <script src="/js/inventory.js"></script>
 </body>
 
 </html>

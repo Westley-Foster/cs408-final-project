@@ -30,9 +30,14 @@ Stretch goals for this kind of project span far and wide. It goes without saying
 
 - index.html
     - implemented using JavaScript and calling it into HTML entirely with help from ChatGPT
+
     - Formatting of table data (i.e. the classes and their description) with ChatGPT
+
+    - Linking another HTML file with a button with reference to "HTML Links", https://www.w3schools.com/html/html_links.asp"
 
 - style.css
     - Centered table for class names and description with reference to "How TO - Center Tables", https://www.w3schools.com/howto/howto_css_table_center.asp
 
     - Center buttons beneath class names and descriptions found with help from ChatGPT
+
+    - Aligning Continue button on bottom-right of screen found with Google's AI Overview

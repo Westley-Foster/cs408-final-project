@@ -34,3 +34,11 @@ p {
   display: block;
   margin: 10px auto 0;
 }
+
+/* Found button alignment on bottom-right of screen with Google's AI Overview */
+.continue {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
