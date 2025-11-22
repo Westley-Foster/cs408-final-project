@@ -29,16 +29,37 @@ p {
     overflow: visible;     /* hide overflow */
 }
 
-/* Center buttons found with help from ChatGPT */
-.center-class-choice {
+/* Center buttons found with help from ChatGPT (currently unused) */
+/* .center-class-choice {
   display: block;
   margin: 10px auto 0;
-}
+} */
 
 /* Found button alignment on bottom-right of screen with Google's AI Overview */
-.continue {
+.route-two {
   position: fixed;
   bottom: 0;
   right: 0;
   margin: 20px;
+}
+
+/* Aligns the button for the left route on the bottom-left side of the screen */
+.route-one {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+}
+
+/* Aligns back button to bottom-center of the screen. Note: will possibly remove for future buttons like stats */
+.back {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin: 20px;
+}
+
+/* Used to style the player's class choice button and access it in character.js */
+.class-choice {
+  margin: auto;
 }

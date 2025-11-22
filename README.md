@@ -35,9 +35,14 @@ Stretch goals for this kind of project span far and wide. It goes without saying
 
     - Linking another HTML file with a button with reference to "HTML Links", https://www.w3schools.com/html/html_links.asp"
 
+    - Using data attributes found with reference to "Use data attributes", https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Use_data_attributes and ChatGPT
+
 - style.css
     - Centered table for class names and description with reference to "How TO - Center Tables", https://www.w3schools.com/howto/howto_css_table_center.asp
 
     - Center buttons beneath class names and descriptions found with help from ChatGPT
 
     - Aligning Continue button on bottom-right of screen found with Google's AI Overview
+
+- character.js
+    - Wrote entirety of character.js with help from ChatGPT

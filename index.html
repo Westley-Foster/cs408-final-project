@@ -56,7 +56,8 @@
 
           <p>Well-balanced and a common class for adventurers. Respected among most of the populace.</p>
 
-          <button>Choose</button>
+          <!-- Using data attributes found with developer.mozilla.org and ChatGPT -->
+          <button class="class-choice" data-player-class="Knight">Choose</button>
         </td>
         <td class="classes">
           <p>
@@ -66,7 +67,7 @@
 
           <p>High-risk, high-reward class in terms of dealing and taking damage. Most admired type of adventurer.</p>
 
-          <button>Choose</button>
+          <button class="class-choice" data-player-class="Mage">Choose</button>
         </td>
         <td class="classes">
           <p>A swift and cunning shadow of the night. Quick on their feet and precise in their strikes. Low constitution and 
@@ -75,15 +76,16 @@
 
           <p>Can attack twice and has a higher chance to evade. Least admired type of adventurer.</p>
 
-          <button>Choose</button>
+          <button class="class-choice" data-player-class="Thief">Choose</button>
         </td>
       </tr>
     </tbody>
    </table>
 
   <!-- Found how to link to a separate HTML file with a button from w3schools.com -->
-  <button class="continue" onclick="document.location='intro.html'">Continue</button>
+  <button class="route-two" onclick="document.location='intro.html'">Continue</button>
 
+  <script src="/js/character.js"></script>
 </body>
 
 </html>
