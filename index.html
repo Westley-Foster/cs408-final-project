@@ -38,49 +38,52 @@
 
   <p><strong>Please choose your class below</strong></p>
 
-  <table class="center-classes" aria-describedby="Table that displays class names for the player and descriptions for each class. Also includes buttons for selecting and submitting the player's chosen class">
-    <thead>
-      <tr>
-        <th scope="col">Knight</th>
-        <th scope="col">Mage</th>
-        <th scope="col">Thief</th>
-      </tr>
-    </thead>
+  <div class="add-container">
+    <table class="center-classes" aria-describedby="Table that displays class names for the player and descriptions for each class. Also includes buttons for selecting and submitting the player's chosen class">
+      <thead>
+        <tr>
+          <th scope="col">Knight</th>
+          <th scope="col">Mage</th>
+          <th scope="col">Thief</th>
+        </tr>
+      </thead>
 
-    <tbody>
-      <tr>
-        <td class="classes">
-          <p>A sturdy, well-trained warrior. Adept at using swords and wearing armor. High constitution and strength, but little in 
-             the field of the arcane.
-          </p>
+      <tbody>
+        <tr>
+          <td class="classes">
+            <p>A sturdy, well-trained warrior. Adept at using swords and wearing armor. High constitution and strength, but little in 
+              the field of the arcane.
+            </p>
 
-          <p>Well-balanced and a common class for adventurers. Respected among most of the populace.</p>
+            <p>Well-balanced and a common class for adventurers. Respected among most of the populace.</p>
 
-          <!-- Using data attributes found with developer.mozilla.org and ChatGPT -->
-          <button class="class-choice" data-player-class="Knight">Choose</button>
-        </td>
-        <td class="classes">
-          <p>
-            An expert in the arcane. Uses spells to deal high damage to foes in short, but deadly, bursts. Low constitution and 
-            strength, but makes up for it in magical power.
-          </p>
+            <!-- Using data attributes found with developer.mozilla.org and ChatGPT -->
+            <button class="class-choice" data-player-class="Knight">Choose</button>
+          </td>
+          <td class="classes">
+            <p>
+              An expert in the arcane. Uses spells to deal high damage to foes in short, but deadly, bursts. Low constitution and 
+              strength, but makes up for it in magical power.
+            </p>
 
-          <p>High-risk, high-reward class in terms of dealing and taking damage. Most admired type of adventurer.</p>
+            <p>High-risk, high-reward class in terms of dealing and taking damage. Most admired type of adventurer.</p>
 
-          <button class="class-choice" data-player-class="Mage">Choose</button>
-        </td>
-        <td class="classes">
-          <p>A swift and cunning shadow of the night. Quick on their feet and precise in their strikes. Low constitution and 
-            strength, but makes up for it in speed.
-          </p>
+            <button class="class-choice" data-player-class="Mage">Choose</button>
+          </td>
+          <td class="classes">
+            <p>A swift and cunning shadow of the night. Quick on their feet and precise in their strikes. Low constitution and 
+              strength, but makes up for it in speed.
+            </p>
 
-          <p>Can attack twice and has a higher chance to evade. Least admired type of adventurer.</p>
+            <p>Can attack twice and has a higher chance to evade. Least admired type of adventurer.</p>
 
-          <button class="class-choice" data-player-class="Thief">Choose</button>
-        </td>
-      </tr>
-    </tbody>
+            <button class="class-choice" data-player-class="Thief">Choose</button>
+          </td>
+        </tr>
+      </tbody>
    </table>
+  </div>
+
 
   <!-- Found how to link to a separate HTML file with a button from w3schools.com -->
   <button class="route-two" onclick="document.location='intro.html'">Continue</button>

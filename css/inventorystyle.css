@@ -64,6 +64,19 @@ p {
   margin: auto;
 }
 
+.inventory-btn {
+    position: fixed;
+    bottom: 0;
+    left: 25%;
+    margin: 20px;
+}
+.stats-btn {
+    position: fixed;
+    bottom: 0;
+    right: 25%;
+    margin: 20px;
+}
+
 .add-container {
   width: 350px;
   margin: 40px auto;

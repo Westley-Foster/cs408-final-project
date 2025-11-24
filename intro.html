@@ -6,7 +6,7 @@
   <title>Thornestowne</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/inventorystyle.css">
 </head>
 
 <body>
@@ -19,6 +19,17 @@
   <br>
   <br>
   <p>You take one last look behind you, taking in as much of your old home to remember as you can. With a heavy heart and a burning passion, you turn around and take your first step outside into the world.</p>
+
+  <br>
+  <br>
+
+  <p>
+    Eventually, you stumble upon a humble gnome who offers you a potion. You can't tell what it is by it's color, and the gnome refuses to elabortate.
+    You can take the potion if you would like.
+    <br>
+    <br>
+    <button class="add-item" type="button" id="send-data">Take Potion</button>
+  </p>
 
 
   <!-- Implemented sourcing a JavaScript file with ChatGPT (all the below code) -->
@@ -71,7 +82,9 @@
   </div>
 
   <button class="route-one">Choice 1</button>
+  <button class="inventory-btn">Inventory</button>
   <button class="back" onclick="document.location='index.html'">Back</button>
+  <button class="stats-btn">Stats</button>
   <button class="route-two">Choice 2</button>
 
   <script src="/js/inventory.js"></script>
