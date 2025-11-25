@@ -44,5 +44,7 @@ Stretch goals for this kind of project span far and wide. It goes without saying
 
     - Aligning Continue button on bottom-right of screen found with Google's AI Overview
 
+    - Styling <p> elements outside of the character classes table quickly fixed with ChatGPT
+
 - character.js
     - Wrote entirety of character.js with help from ChatGPT

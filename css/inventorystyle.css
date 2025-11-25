@@ -9,25 +9,27 @@ h1 {
 }
 
 p {
+  margin-left: 100px;
+  margin-right: 100px;
   text-align: center;
 }
 
 /* Referenced how to center a table at https://www.w3schools.com/howto/howto_css_table_center.asp */
-.center-classes {
+/* .center-classes {
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
-}
+} */
 
 /* Centering table data <td> content (the classes and their descriptions) with ChatGPT */
-.classes {
-    max-width: 150px;     /* limits the width */
-    padding: 8px 12px;    /* spacing inside cells */
-    text-align: center;     /* aligns text inside cell */
-    white-space: normal;  /* prevents wrapping to a new line */
+/* .classes {
+    max-width: 150px;
+    padding: 8px 12px;
+    text-align: center;
+    white-space: normal;
     vertical-align: top;
-    overflow: visible;     /* hide overflow */
-}
+    overflow: visible;
+} */
 
 /* Center buttons found with help from ChatGPT (currently unused) */
 /* .center-class-choice {
@@ -60,9 +62,9 @@ p {
 }
 
 /* Used to style the player's class choice button and access it in character.js */
-.class-choice {
+/* .class-choice {
   margin: auto;
-}
+} */
 
 .inventory-btn {
     position: fixed;
