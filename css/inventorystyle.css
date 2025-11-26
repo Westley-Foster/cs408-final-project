@@ -14,69 +14,38 @@ p {
   text-align: center;
 }
 
-/* Referenced how to center a table at https://www.w3schools.com/howto/howto_css_table_center.asp */
-/* .center-classes {
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: collapse;
-} */
-
-/* Centering table data <td> content (the classes and their descriptions) with ChatGPT */
-/* .classes {
-    max-width: 150px;
-    padding: 8px 12px;
-    text-align: center;
-    white-space: normal;
-    vertical-align: top;
-    overflow: visible;
-} */
-
-/* Center buttons found with help from ChatGPT (currently unused) */
-/* .center-class-choice {
-  display: block;
-  margin: 10px auto 0;
-} */
-
 /* Found button alignment on bottom-right of screen with Google's AI Overview */
 .route-two {
-  position: fixed;
+  position: relative;
   bottom: 0;
-  right: 0;
+  left: 75%;
+  right: 25%;
   margin: 20px;
 }
 
 /* Aligns the button for the left route on the bottom-left side of the screen */
 .route-one {
-  position: fixed;
+  position: relative;
   bottom: 0;
-  left: 0;
+  right: 75%;
+  left: 5%;
   margin: 20px;
 }
 
 /* Aligns back button to bottom-center of the screen. Note: will possibly remove for future buttons like stats */
 .back {
-  position: fixed;
+  position: relative;
   bottom: 0;
-  left: 50%;
+  left: 40%;
   margin: 20px;
 }
 
-/* Used to style the player's class choice button and access it in character.js */
-/* .class-choice {
-  margin: auto;
-} */
-
-.inventory-btn {
-    position: fixed;
-    bottom: 0;
-    left: 25%;
-    margin: 20px;
-}
 .stats-btn {
     position: fixed;
     bottom: 0;
-    right: 25%;
+    left: 65%;
     margin: 20px;
+    z-index: 101;
 }
 
 .add-container {
@@ -87,4 +56,43 @@ p {
   border-radius: 6px;
   /* background-color: #5f82a0; */
   text-align: center;
+}
+
+/* Bottom CSS rules make the inventory button make a parchment like paper table. Created with ChatGPT */
+.inventory-btn {
+    position: relative; /* just normal relative inside wrapper */
+    bottom: 0;
+    left: 25%;
+    margin: 20px;
+    z-index: 101; /* ensures it stays above the panel */
+}
+
+.inventory-wrapper {
+    position: fixed;      /* keep the wrapper fixed like your button */
+    bottom: 0;
+    left: 25%;            /* same as your current button position */
+}
+
+#inventory-panel {
+    position: absolute;   /* absolutely positioned relative to wrapper */
+    bottom: 100%;         /* sits above the button */
+    left: 50%;            /* start at the center of the button */
+    transform: translateX(-50%);  /* truly center above button */
+    margin-bottom: 10px;
+    display: none;
+    width: 220px;
+    padding: 10px;
+    background-color: #f9f3d2;
+    border: 2px solid #c8b37a;
+    border-radius: 6px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+    z-index: 100;         /* just under the button */
+}
+
+#inventory-table {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
 }

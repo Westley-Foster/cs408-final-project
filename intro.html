@@ -32,6 +32,8 @@
   </p>
 
 
+
+
   <!-- Implemented sourcing a JavaScript file with ChatGPT (all the below code) -->
   <!-- ADD ITEM SECTION -->
   <div class="add-container">
@@ -75,8 +77,29 @@
     <button id="delete-data">Delete</button>
   </div>
 
+  <!-- Bottom screen buttons -->
   <button class="route-one">Choice 1</button>
-  <button class="inventory-btn">Inventory</button>
+  
+  <!-- Table opening above inventory button when clicked wsritten with help from ChatGPT -->
+  <div class="inventory-wrapper">
+    <button class="inventory-btn" id="inventory-button">Inventory</button>
+
+    <div id="inventory-panel" class="hidden">
+      <table id="inventory-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="inventory-body">
+          <!-- Items from AWS will go here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
   <button class="back" onclick="document.location='index.html'">Back</button>
   <button class="stats-btn">Stats</button>
   <button class="route-two" onclick="document.location='quest.html'">Choice 2</button>

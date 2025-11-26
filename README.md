@@ -37,6 +37,9 @@ Stretch goals for this kind of project span far and wide. It goes without saying
 
     - Using data attributes found with reference to "Use data attributes", https://developer.mozilla.org/en-US/docs/Web/HTML/How_to/Use_data_attributes and ChatGPT
 
+- intro.html
+    - Wrote code to create a table with inventory contents directly above the inventory button when clicked with help from ChatGPT.
+
 - style.css
     - Centered table for class names and description with reference to "How TO - Center Tables", https://www.w3schools.com/howto/howto_css_table_center.asp
 
@@ -48,3 +51,6 @@ Stretch goals for this kind of project span far and wide. It goes without saying
 
 - character.js
     - Wrote entirety of character.js with help from ChatGPT
+
+- itempickup.js
+    - Wrote entirety of itempickup.js with help from ChatGPT

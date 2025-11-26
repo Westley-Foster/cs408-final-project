@@ -2,119 +2,103 @@
 document.addEventListener("DOMContentLoaded", function () {
     // PUT Request
     // Written with help from ChatGPT
-        document.getElementById("pickup-potion").addEventListener("click", function () {
-            const item = {
-                name: "Health Potion"   // only name is needed! Lambda assigns ID.
-            };
+    document.getElementById("pickup-potion").addEventListener("click", function () {
+        const item = { name: "Health Potion" };
 
-            const xhr = new XMLHttpRequest();
-            xhr.open("PUT", "https://gm93zn2dn7.execute-api.us-east-2.amazonaws.com/inventory");
-            xhr.setRequestHeader("Content-Type", "application/json");
-            xhr.send(JSON.stringify(item));
+        const xhr = new XMLHttpRequest();
+        xhr.open("PUT", "https://gm93zn2dn7.execute-api.us-east-2.amazonaws.com/inventory");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(JSON.stringify(item));
 
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    const response = JSON.parse(xhr.responseText);
-
-                    // Lambda returns: { message: "...", id: "potion4" }
-                    alert(`${item.name} added to inventory! (ID: ${response.id})`);
-                } else {
-                    alert("Error: " + xhr.statusText);
-                }
-            };
-        });
-
-
-    // GET Request
-    // Written with help from ChatGPT
-        document.getElementById("load-data").onclick = function() {
-            const xhr = new XMLHttpRequest();
-            xhr.open("GET", "https://gm93zn2dn7.execute-api.us-east-2.amazonaws.com/inventory");
-
-            xhr.onload = function() {
-                if (xhr.status === 200) {
-                const data = JSON.parse(xhr.responseText);
-                const tbody = document.getElementById("lambda-info");
-                tbody.innerHTML = ""; // clear previous table contents
-
-                // Sort items by ID (assuming numeric IDs; if string, this still works lexically)
-                data.sort((a, b) => {
-                    // If IDs are numbers
-                    if (!isNaN(a.id) && !isNaN(b.id)) return a.id - b.id;
-                    // Otherwise, compare as strings
-                    return a.id.toString().localeCompare(b.id.toString());
-                });
-
-                // Add sorted rows
-                data.forEach(item => addRowToTable(item));
-
-                } else {
-                alert("Failed to load items.");
-                }
-            };
-
-                xhr.send();
-
-            };
-
-            // Helper function to add a row dynamically
-            function addRowToTable(item) {
-                const tbody = document.getElementById("lambda-info");
-                const tr = document.createElement("tr");
-
-                const tdId = document.createElement("td");
-                tdId.textContent = item.id;
-
-                const tdName = document.createElement("td");
-                tdName.textContent = item.name;
-
-                const tdAction = document.createElement("td");
-                const delBtn = document.createElement("button");
-                delBtn.textContent = "Delete";
-                delBtn.classList.add("delete-btn"); // ← add this line
-                delBtn.onclick = function() { deleteItem(item.id, tr); };
-                tdAction.appendChild(delBtn);
-
-                tr.appendChild(tdId);
-                tr.appendChild(tdName);
-                tr.appendChild(tdAction);
-                tbody.appendChild(tr);
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const response = JSON.parse(xhr.responseText);
+                alert(`${item.name} added to inventory! (ID: ${response.id})`);
+            } else {
+                alert("Error: " + xhr.statusText);
             }
+        };
+    });
 
-    // DELETE Request
+     // DELETE Request
     // Written with help from ChatGPT
-            document.getElementById("delete-data").addEventListener("click", function () {
-                const id = document.getElementById("delete-id").value.trim();
+    // Inventory button (single listener)
+    document.getElementById("inventory-button").addEventListener("click", function () {
+        const panel = document.getElementById("inventory-panel");
 
-                if (!id) {
-                    alert("Please enter an ID to delete");
-                    return;
-                }
-
-                const xhr = new XMLHttpRequest();
-                xhr.open("DELETE", `https://gm93zn2dn7.execute-api.us-east-2.amazonaws.com/inventory/${id}`);
-                xhr.setRequestHeader("Content-Type", "application/json");
-                xhr.send();
-
-                xhr.onload = function () {
-                    if (xhr.status === 200) {
-                        alert(`Item with ID ${id} deleted successfully!`);
-                    } else {
-                        alert("Error deleting item: " + xhr.statusText);
-                    }
-                };
-            });
-
-        // Helper for delete buttons inside table
-        function deleteItem(id) {
-            const xhr = new XMLHttpRequest();
-            xhr.open("DELETE", `https://gm93zn2dn7.execute-api.us-east-2.amazonaws.com/inventory/${id}`);
-            xhr.setRequestHeader("Content-Type", "application/json");
-            xhr.send();
-            xhr.onload = function() {
-                if (xhr.status === 200) {
-                    alert(`Item ${id} deleted.`);
-                }
-            }
+        // Toggle panel visibility
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+            loadInventory();  // fetch items from AWS
         }
+    });
+
+    
+    // Function to fetch and populate inventory
+    function loadInventory() {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://gm93zn2dn7.execute-api.us-east-2.amazonaws.com/inventory");
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const data = JSON.parse(xhr.responseText);
+                const tbody = document.getElementById("inventory-body");
+
+                // Clear previous rows
+                tbody.innerHTML = "";
+
+                // Sort items by ID numerically if possible
+                data.sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
+
+                // Populate table
+                data.forEach(item => {
+                    const tr = document.createElement("tr");
+
+                    const tdId = document.createElement("td");
+                    tdId.textContent = item.id;
+
+                    const tdName = document.createElement("td");
+                    tdName.textContent = item.name;
+
+                    // Action column
+                    const tdAction = document.createElement("td");
+                    const delBtn = document.createElement("button");
+                    delBtn.textContent = "Delete";
+                    delBtn.addEventListener("click", () => deleteItem(item.id, tr));
+                    tdAction.appendChild(delBtn);
+
+                    // Append all columns to row
+                    tr.appendChild(tdId);
+                    tr.appendChild(tdName);
+                    tr.appendChild(tdAction);
+
+                    // Append row to tbody
+                    tbody.appendChild(tr);
+                });
+            } else {
+                alert("Failed to load inventory: " + xhr.statusText);
+            }
+        };
+
+        xhr.send();
+    }
+
+    function deleteItem(id, rowElement) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("DELETE", `https://gm93zn2dn7.execute-api.us-east-2.amazonaws.com/inventory/${id}`);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send();
+
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                // Remove row from table
+                rowElement.remove();
+                alert(`Dropped ${id} from inventory.`);
+            } else {
+                alert("Error deleting item: " + xhr.statusText);
+            }
+        };
+    }
 });
