@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Action column
                     const tdAction = document.createElement("td");
                     const delBtn = document.createElement("button");
-                    delBtn.textContent = "Delete";
+                    delBtn.textContent = "Drop";
                     delBtn.addEventListener("click", () => deleteItem(item.id, tr));
                     tdAction.appendChild(delBtn);
 

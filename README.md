@@ -54,3 +54,9 @@ Stretch goals for this kind of project span far and wide. It goes without saying
 
 - itempickup.js
     - Wrote entirety of itempickup.js with help from ChatGPT
+
+- Lambda Function Codesource on AWS (index.mjs)
+
+    - Altered to increment item ID count and revert back when an item is dropped from the player's inventory. 
+    
+    Example: beforehand, if the player had healthPotion1 and healthPotion2, after dropping healthPotion2 and picking up another healthpotion would place healthPotion3 in the inventory. The Lambda function change decrements it back down to healthPotion2 to reduce confusion.
