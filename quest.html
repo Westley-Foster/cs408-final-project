@@ -75,10 +75,52 @@
     an arrow stuck in its side. It's whimpering, so it's still alive. 
     You snap your head back and see a small man standing before you, 
     still holding his longbow in shooting position. He lowers his hands 
-    and looks at you. “Well,hello there, stranger!”, he bellows in a deep, 
+    and looks at you. “Well, hello there, stranger!”, he bellows in a deep, 
     booming voice. “That sure was a close one. You need to be more careful 
     out here. Despite its looks, these fields are dangerous”. 
   </p>
+
+  <p>He sheathes his bow behind his back and takes a few steps towards you. Extending his hand, he greets himself. "The name's
+     Bueford". He grabs your hand and squeezes so hard you think your hand is about to fall off. You introduce yourself back to 
+     him and get a better look at him now that things are calmed down. His face is grizzled and dirty with a large, orange beard 
+     gripping the sides of his face. It seems to you that he's a dwarf. After a moment, he releases your hand and takes a step back. 
+     "Now what're you doing here sonny? Itching for an adventure no doubt".
+  </p>
+
+  <p>You explain to the small dwarf why you're here on your journey and tell him that you came out to find yourself and yes, adventure 
+     too. "Ah, sounds like a good tale for ye!", he bellows once more. "Well, I'm running out of time and it looks like you might need 
+     yourself a better weapon. I got just the thing for ye". He reaches down to his belt and tugs at the small bag on his waste. It's
+     purple with a golden lace keeping it shut. He opens it and begins digging around inside of it.
+  </p>
+
+  <p>"No no, that won't do...", he mumbles to himself as he digs through the small bag. It's then you realize that that small bag sounds
+     like there's something big in it. Just then, he pulls out a large wooden box closed shut with metal hinges. The wood looks rough
+     like it's seen some tough years, but it still holds strong. "Ah!", he exclaims, "here it is! This here is a box of desired items.
+     You simply touch the boxes handle and imagine what you want and then the box will open, revealing the item you desired. Go on, give
+     it a try!"
+  </p>
+
+  <p>You take a step forward, a little skeptical and apprehensive of the dwarf's description. Nevertheless, you decide what's the
+     worst that can happen? You reach your hand forward, touching the box.
+  </p>
+
+  <!-- ADD ITEM SECTION -->
+  <div class="add-container">
+    <h2>What item or weapon would you like to create?</h2>
+    <form class="add-form" id="add-form">
+      <div class="form-row">
+        <label for="put-id">ID:</label>
+        <input type="text" id="put-id" placeholder="Item Type">
+      </div>
+
+      <div class="form-row">
+        <label for="put-name">Name:</label>
+        <input type="text" id="put-name" placeholder="Item Name">
+      </div>
+
+      <button class="add-item" type="button" id="send-data">Add Item</button>
+    </form>
+  </div>
 
   <p>
         Eventually, you stumble upon a humble gnome who offers you a potion. You can't tell what it is by it's color, and the gnome refuses to elabortate.
@@ -94,19 +136,37 @@
     You can take the potion if you would like.
   </p>
 
+  <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
+  <div class="inventory-wrapper">
+    <button class="inventory-btn" id="inventory-button">Inventory</button>
 
+    <div id="inventory-panel" class="hidden">
+      <table id="inventory-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="inventory-body">
+          <!-- Items from AWS will go here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
 
   <!-- Bottom screen buttons -->
   <div class="page-bottom-buttons">
     <button class="route-one">Placeholder choice</button>
-    <button class="inventory-btn">Inventory</button>
+    <!-- <button class="inventory-btn">Inventory</button> -->
     <button class="back" onclick="document.location='intro.html'">Back</button>
     <button class="stats-btn">Stats</button>
     <button class="route-two-quest">Placeholder choice</button>
   </div>
 
   <script src="/js/inventory.js"></script>
-
+  <!-- <script src="/js/itempickup.js"></script> -->
 </body>
 
 </html>

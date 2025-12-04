@@ -24,8 +24,8 @@
   <br>
 
   <p>
-    Eventually, you stumble upon a humble gnome who offers you a potion. You can't tell what it is by it's color, and the gnome refuses to elabortate.
-    You can take the potion if you would like.
+    Eventually, you stumble upon a humble gnome who offers you a potion. Before you can respond, he empties his bag in front of you and out poors a seemingly endless amount of what looks to be the same potion type. You can't tell what it is by it's color, and the gnome refuses to elabortate.
+    You can take the potion, or as many, if you would like.
     <br>
     <br>
     <button type="button" id="pickup-potion">Take Potion</button> <!-- Note to self: removed class="add-item" because it doesn't do anything -->
@@ -68,34 +68,10 @@
     </form>
   </div>
 
-  <!-- LOAD BUTTON -->
-  <div class="load-container">
-    <button id="load-data">Load Items</button>
-  </div>
-
-  <!-- TABLE -->
-  <table>
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody id="lambda-info"></tbody>
-  </table>
-
-  <!-- DELETE SECTION -->
-  <div class="delete-container">
-    <h2>Delete Item</h2>
-    <input id="delete-id" placeholder="Enter ID to delete">
-    <button id="delete-data">Delete</button>
-  </div>
-
   <!-- Bottom screen buttons -->
   <button class="route-one">Choice 1</button>
   
-  <!-- Table opening above inventory button when clicked wsritten with help from ChatGPT -->
+  <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
   <div class="inventory-wrapper">
     <button class="inventory-btn" id="inventory-button">Inventory</button>
 
@@ -120,7 +96,7 @@
   <button class="route-two-intro" onclick="document.location='quest.html'">Choice 2</button>
 
   <script src="/js/inventory.js"></script>
-  <script src="/js/itempickup.js"></script>
+  <!-- <script src="/js/itempickup.js"></script> -->
 </body>
 
 </html>
