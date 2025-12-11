@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Humming Source</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/inventorystyle.css">
+</head>
+
+<body>
+  <h1>Fae's Waterfall</h1>
+
+  <p>
+    You decide that finding out what the source of the humming is is more important than investigating the goblin cave. You turn and 
+    move forward towards the glowing light. The sound of the humming increases and feels more alluring the closer that you get. Nearly 
+    tripping over the thick vines, you finally reach the bushes to which the light is emanating from. You begin to brush them aside 
+    and step forward, covering your eyes with your hand as the light intensifies.
+  </p>
+
+  <!-- ADD ITEM SECTION -->
+  <div class="add-container">
+    <h2>Needed for Inventory button to work</h2>
+    <form class="add-form" id="add-form">
+      <div class="form-row">
+        <label for="put-id">ID:</label>
+        <input type="text" id="put-id" placeholder="Item Type">
+      </div>
+
+      <div class="form-row">
+        <label for="put-name">Name:</label>
+        <input type="text" id="put-name" placeholder="Item Name">
+      </div>
+
+      <button class="add-item" type="button" id="send-data">Add Item</button>
+    </form>
+  </div>
+
+  <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
+  <div class="inventory-wrapper">
+    <button class="inventory-btn" id="inventory-button">Inventory</button>
+
+    <div id="inventory-panel" class="hidden">
+      <table id="inventory-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="inventory-body">
+          <!-- Items from AWS will go here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Bottom screen buttons -->
+  <div class="page-bottom-buttons">
+    <!-- <button class="route-one" onclick="document.location='quest.html'">Back towards the cave</button> -->
+    <!-- <button class="inventory-btn">Inventory</button> -->
+    <button class="back" onclick="document.location='quest.html'">Back towards the cave </button>
+    <button class="stats-btn">Stats</button>
+    <!-- <button class="route-two-quest">Placeholder</button> -->
+  </div>
+
+  <script src="/js/inventory.js"></script>
+  <!-- <script src="/js/itempickup.js"></script> -->
+
+</body>
+
+</html>

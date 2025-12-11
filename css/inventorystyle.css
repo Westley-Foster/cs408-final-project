@@ -20,7 +20,6 @@ p {
   background-image: url(../img/Thornestown\ \(408\ Project\).png);
   background-size: cover;
   background-position: center center;
-  filter: drop-shadow(5px 5px 10px rgb(0, 0, 0, 0.9));
 }
 
 /* Found button alignment on bottom-right of screen with Google's AI Overview */

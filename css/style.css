@@ -13,7 +13,13 @@ h1 {
   background-image: url(../img/Thornestown\ \(408\ Project\).png);
   background-size: cover;
   background-position: center center;
-  filter: drop-shadow(5px 5px 10px rgb(0, 0, 0, 0.9));
+}
+
+/* Background image for index.html */
+.index-bg {
+  background-image: url(../img/brown_bckg.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 /* Formats all <p> elements outside of the table, keeping the table's <p> styling unique. Quickly fixed with ChatGPT*/

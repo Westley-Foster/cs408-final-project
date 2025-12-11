@@ -80,28 +80,32 @@
     out here. Despite its looks, these fields are dangerous”. 
   </p>
 
-  <p>He sheathes his bow behind his back and takes a few steps towards you. Extending his hand, he greets himself. "The name's
-     Bueford". He grabs your hand and squeezes so hard you think your hand is about to fall off. You introduce yourself back to 
-     him and get a better look at him now that things are calmed down. His face is grizzled and dirty with a large, orange beard 
-     gripping the sides of his face. It seems to you that he's a dwarf. After a moment, he releases your hand and takes a step back. 
-     "Now what're you doing here sonny? Itching for an adventure no doubt".
+  <p>
+    He sheathes his bow behind his back and takes a few steps towards you. Extending his hand, he greets himself. "The name's
+    Bueford". He grabs your hand and squeezes so hard you think your hand is about to fall off. You introduce yourself back to 
+    him and get a better look at him now that things are calmed down. His face is grizzled and dirty with a large, orange beard 
+    gripping the sides of his face. It seems to you that he's a dwarf. After a moment, he releases your hand and takes a step back. 
+    "Now what're you doing here sonny? Itching for an adventure no doubt".
   </p>
 
-  <p>You explain to the small dwarf why you're here on your journey and tell him that you came out to find yourself and yes, adventure 
-     too. "Ah, sounds like a good tale for ye!", he bellows once more. "Well, I'm running out of time and it looks like you might need 
-     yourself a better weapon. I got just the thing for ye". He reaches down to his belt and tugs at the small bag on his waste. It's
-     purple with a golden lace keeping it shut. He opens it and begins digging around inside of it.
+  <p>
+    You explain to the small dwarf why you're here on your journey and tell him that you came out to find yourself and yes, adventure 
+    too. "Ah, sounds like a good tale for ye!", he bellows once more. "Well, I'm running out of time and it looks like you might need 
+    yourself a better weapon. I got just the thing for ye". He reaches down to his belt and tugs at the small bag on his waste. It's
+    purple with a golden lace keeping it tied closed. He opens it and begins digging around inside of it.
   </p>
 
-  <p>"No no, that won't do...", he mumbles to himself as he digs through the small bag. It's then you realize that that small bag sounds
-     like there's something big in it. Just then, he pulls out a large wooden box closed shut with metal hinges. The wood looks rough
-     like it's seen some tough years, but it still holds strong. "Ah!", he exclaims, "here it is! This here is a box of desired items.
-     You simply touch the boxes handle and imagine what you want and then the box will open, revealing the item you desired. Go on, give
-     it a try!"
+  <p>
+    "No no, that won't do...", he mumbles to himself as he digs through the small bag. It's then you realize that that small bag sounds
+    like there's something big in it. Just then, he pulls out a large wooden box closed shut with metal hinges. The wood looks rough
+    like it's seen some tough years, but it still holds strong. "Ah!", he exclaims, "here it is! This here is a box of desired items.
+    You simply touch the boxes handle and imagine what you want and then the box will open, revealing the item you desired. There's 
+    no limit either, so go on, give it a try!"
   </p>
 
-  <p>You take a step forward, a little skeptical and apprehensive of the dwarf's description. Nevertheless, you decide what's the
-     worst that can happen? You reach your hand forward, touching the box.
+  <p>
+    You take a step forward, a little skeptical and apprehensive of the dwarf's description. Nevertheless, you decide what's the
+    worst that can happen? You reach your hand forward and touch the box. 
   </p>
 
   <!-- ADD ITEM SECTION -->
@@ -121,6 +125,43 @@
       <button class="add-item" type="button" id="send-data">Add Item</button>
     </form>
   </div>
+
+  <p>
+    After you take your items, the box closes itself with a soft *thud*. You give your thanks to Bueford as he lifts the wonderous
+    box up and shoves it back into the tiny bag. After strapping the purple bag back to his belt, he looks up to you and waves his 
+    hand side-to-side. "No thanks needed, lad. You should be better equipped to survive out here now", he says. "I best be getting
+    on my way too, I don't wanna linger in the same place for too long". As he turns arounds, he stops about halfway before he continues
+    to speak. "Oh, I do have a small favor to ask in return though".
+  </p>
+
+  <p>
+    He pulls out a map from his pocket and unfolds it, displaying the drawing to you. "I was given a job to clear out a cave of goblins 
+    near here". He points to a small dot on the map with a circle around it. "However," he says, "I'm in need of a good drink, and
+    considering you're well-equipped now, you mind doing it for me?". Before you can answer, he shoves the map into your hands and 
+    quickly stands up. He turns around and starts running towards ThornesTown as he looks back and waves at you "Thanks mate!".
+  </p>
+
+  <p>
+    You stand there, stunned, as you watch the little man disappear behind the tall grass in the distance. Glancing back at the map, 
+    you think to yourself that this could be good experience to gain before continuing on your adventure. You stuff the map into your
+    pocket and start walking further down the road.
+  </p>
+
+  <!-- Maybe put some extra scenery details here. This page is already a little long though. -->
+
+  <p>
+    After some time, you eventually come to a point in the road where you can barely make out the opening of a small cave, with a 
+    dying fire near the mouth of the cave. You look down at the map and realize that this is the cave Bueford was talking about. 
+    You take a few steps forward towards the cave, but stop in your tracks as you hear a faint sound from behind you. It sounds like...humming?
+  </p>
+
+  <p>
+    Turning around, you see a small, beaten path almost entirely overgrown with thick green vines leading into the woods. A faint
+    glow of white light is emitting from the brush beyond the path. The humming seems to be coming from somewhere behidn the 
+    light. You feel a strange sensation of calmness and relaxation as you hear the tune repeatedly play. You take a step forward 
+    before stopping yourself. You still need to take care of the goblins in the cave, but you also feel like you need to investigate
+    the source of the humming. Do you investigate the humming, or do you investigate the goblin cave?
+  </p>
 
 
   <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
@@ -145,11 +186,10 @@
 
   <!-- Bottom screen buttons -->
   <div class="page-bottom-buttons">
-    <button class="route-one">Placeholder choice</button>
-    <!-- <button class="inventory-btn">Inventory</button> -->
+    <button class="route-one" onclick="document.location='humming.html'">Investigate the humming</button>
     <button class="back" onclick="document.location='intro.html'">Back</button>
     <button class="stats-btn">Stats</button>
-    <button class="route-two-quest">Placeholder choice</button>
+    <button class="route-two-quest" onclick="document.location='goblincave.html'">Investigate the goblin cave</button>
   </div>
 
   <script src="/js/inventory.js"></script>

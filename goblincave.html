@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Humming Source</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/inventorystyle.css">
+</head>
+
+<body>
+  <h1>Goblin Cave</h1>
+
+  <p>
+    Shaking your head, you turn away from the emanating light and the alluring sound of the humming. You walk forwards and towards
+    the cave entrance as the sound of the humming becomes fainter and fainter before you can no longer hear it.
+  </p>
+
+  <p>
+    Stepping up to the cave's entrance, you find a smouldering fire. Somebody was just here. Surrounding the fire are destroyed wooden 
+    boxes and other debris. You quickly gather that there was some kind of commotion that took place here. You look up at the mouth 
+    of the cave. You can't see anything but pure darkness. As you squint your eyes trying to see something, anything, you hear a loud
+    cackling noise followed by a chorus of harsh laughter.
+  </p>
+
+  <!-- ADD ITEM SECTION -->
+  <div class="add-container">
+    <h2>Needed for Inventory button to work</h2>
+    <form class="add-form" id="add-form">
+      <div class="form-row">
+        <label for="put-id">ID:</label>
+        <input type="text" id="put-id" placeholder="Item Type">
+      </div>
+
+      <div class="form-row">
+        <label for="put-name">Name:</label>
+        <input type="text" id="put-name" placeholder="Item Name">
+      </div>
+
+      <button class="add-item" type="button" id="send-data">Add Item</button>
+    </form>
+  </div>
+
+  <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
+  <div class="inventory-wrapper">
+    <button class="inventory-btn" id="inventory-button">Inventory</button>
+
+    <div id="inventory-panel" class="hidden">
+      <table id="inventory-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="inventory-body">
+          <!-- Items from AWS will go here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Bottom screen buttons -->
+  <div class="page-bottom-buttons">
+    <button class="route-one">Placeholder</button>
+    <!-- <button class="inventory-btn">Inventory</button> -->
+    <button class="back" onclick="document.location='quest.html'">Back</button>
+    <button class="stats-btn">Stats</button>
+    <button class="route-two-quest">Placeholder</button>
+  </div>
+
+  <script src="/js/inventory.js"></script>
+  <!-- <script src="/js/itempickup.js"></script> -->
+
+</body>
+
+</html>
