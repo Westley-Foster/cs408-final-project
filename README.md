@@ -41,6 +41,11 @@ Stretch goals for this kind of project span far and wide. It goes without saying
 - intro.html
     - Wrote code to create a table with inventory contents directly above the inventory button when clicked with help from ChatGPT.
 
+    - Hid unused form, but keeping Inventory button functionality, with help from ChatGPT
+
+- quest.html
+    - Fixed button positioning with help from ChatGPT
+
 - style.css
     - Centered table for class names and description with reference to "How TO - Center Tables", https://www.w3schools.com/howto/howto_css_table_center.asp
 
@@ -49,6 +54,13 @@ Stretch goals for this kind of project span far and wide. It goes without saying
     - Aligning Continue button on bottom-right of screen found with Google's AI Overview
 
     - Styling <p> elements outside of the character classes table quickly fixed with ChatGPT
+
+- introstyle.css
+    - Quickly fixed "Take Potion" button alignment with ChatGPT
+    - Added button on-click effect found with Google's AI Overview
+
+- queststyle.css
+    - Fixed button positioning with help from ChatGPT
 
 - character.js
     - Wrote entirety of character.js with help from ChatGPT

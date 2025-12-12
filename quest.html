@@ -6,10 +6,10 @@
     <title>The Outer Fields</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/inventorystyle.css">
+    <link rel="stylesheet" href="/css/queststyle.css">
 </head>
 
-<body>
+<body class="quest-bg">
   <h1>The Outer Fields</h1>
 
   <p>
@@ -18,13 +18,12 @@
     clouds float by as the sun brightens the fields in front of you with 
     a warm glow. You lower your head and breathe a sigh of relaxation. 
     You continue on your journey, the grass and flowers swaying gently 
-    in the wind as you follow the dirt road towards <strong>Lunevaria</strong>.
+    in the wind as you follow the dirt road towards Lunevaria.
   </p>
 
   <p>
     You hear the shuffling of your bushes to your left. Turning your head 
-    to the movement, you see the <strong>Prickling Woods (or Twisting 
-    Woods or Forest)</strong> in its eerie glory. The woods are more grand than you could 
+    to the movement, you see the Prickling Woods in its eerie glory. The woods are more grand than you could 
     ever imagine. Dark-colored trees as wide as two horse-drawn carriages 
     reach endlessly toward the sky, their tops only being visible when 
     one squints hard. The trees are packed tightly together, blocking 
@@ -54,7 +53,7 @@
 
   <p>
     Watching the hog depart, you feel a tinge of disappointment. You turn 
-    back around towards the <strong>Prickling Woods</strong>, but find yourself face-to-face 
+    back around towards the Prickling Woods, but find yourself face-to-face 
     with a large, growling wolf. You desperately back up in sudden fear, 
     but fall down as you attempt to run. The wolf slowly approaches you 
     as you scoot away in hurry. It barks as it lunges at you.
@@ -138,7 +137,7 @@
     He pulls out a map from his pocket and unfolds it, displaying the drawing to you. "I was given a job to clear out a cave of goblins 
     near here". He points to a small dot on the map with a circle around it. "However," he says, "I'm in need of a good drink, and
     considering you're well-equipped now, you mind doing it for me?". Before you can answer, he shoves the map into your hands and 
-    quickly stands up. He turns around and starts running towards ThornesTown as he looks back and waves at you "Thanks mate!".
+    quickly stands up. He turns around and starts running towards ThornesTowne as he looks back and waves at you "Thanks mate!".
   </p>
 
   <p>
@@ -163,30 +162,31 @@
     the source of the humming. Do you investigate the humming, or do you investigate the goblin cave?
   </p>
 
-
-  <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
-  <div class="inventory-wrapper">
-    <button class="inventory-btn" id="inventory-button">Inventory</button>
-
-    <div id="inventory-panel" class="hidden">
-      <table id="inventory-table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody id="inventory-body">
-          <!-- Items from AWS will go here -->
-        </tbody>
-      </table>
-    </div>
-  </div>
-
+  <!-- Redid button positioning with help from ChatGPT -->
   <!-- Bottom screen buttons -->
   <div class="page-bottom-buttons">
     <button class="route-one" onclick="document.location='humming.html'">Investigate the humming</button>
+
+    <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
+    <div class="inventory-wrapper">
+      <button class="inventory-btn" id="inventory-button">Inventory</button>
+
+      <div id="inventory-panel" class="hidden">
+        <table id="inventory-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="inventory-body">
+            <!-- Items from AWS will go here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
     <button class="back" onclick="document.location='intro.html'">Back</button>
     <button class="stats-btn">Stats</button>
     <button class="route-two-quest" onclick="document.location='goblincave.html'">Investigate the goblin cave</button>

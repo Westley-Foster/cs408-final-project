@@ -37,33 +37,34 @@
     </form>
   </div>
 
-  <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
-  <div class="inventory-wrapper">
-    <button class="inventory-btn" id="inventory-button">Inventory</button>
-
-    <div id="inventory-panel" class="hidden">
-      <table id="inventory-table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody id="inventory-body">
-          <!-- Items from AWS will go here -->
-        </tbody>
-      </table>
-    </div>
-  </div>
-
+  <!-- Redid button positioning with help from ChatGPT -->
   <!-- Bottom screen buttons -->
   <div class="page-bottom-buttons">
-    <!-- <button class="route-one" onclick="document.location='quest.html'">Back towards the cave</button> -->
-    <!-- <button class="inventory-btn">Inventory</button> -->
-    <button class="back" onclick="document.location='quest.html'">Back towards the cave </button>
+    <!-- <button class="route-one" onclick="document.location='humming.html'">Investigate the humming</button> -->
+
+    <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
+    <div class="inventory-wrapper">
+      <button class="inventory-btn" id="inventory-button">Inventory</button>
+
+      <div id="inventory-panel" class="hidden">
+        <table id="inventory-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="inventory-body">
+            <!-- Items from AWS will go here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <button class="back" onclick="document.location='quest.html'">Back to the Cave</button>
     <button class="stats-btn">Stats</button>
-    <!-- <button class="route-two-quest">Placeholder</button> -->
+    <!-- <button class="route-two-quest" onclick="document.location='goblincave.html'">Investigate the goblin cave</button> -->
   </div>
 
   <script src="/js/inventory.js"></script>

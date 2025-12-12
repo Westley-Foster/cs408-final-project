@@ -6,30 +6,48 @@
   <title>Thornestowne</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/inventorystyle.css">
+  <link rel="stylesheet" href="css/introstyle.css">
 </head>
 
 <body class="intro-bg">
-  <h1>ThornesTown</h1>
-
-  <p>You spend a comfortable training as a [class choice here]. [Add unique description of training process for each class here].</p>
-  <p>[I wanna add more detail of ThornesTown either here or on previous page]</p>
-
-  <p>[After enough dialogue]…</p>
-  <br>
-  <br>
-  <p>You take one last look behind you, taking in as much of your old home to remember as you can. With a heavy heart and a burning passion, you turn around and take your first step outside into the world.</p>
-
-  <br>
-  <br>
+  <h1>ThornesTowne</h1>
 
   <p>
-    Eventually, you stumble upon a humble gnome who offers you a potion. Before you can respond, he empties his bag in front of you and out poors a seemingly endless amount of what looks to be the same potion type. You can't tell what it is by it's color, and the gnome refuses to elabortate.
-    You can take the potion, or as many, if you would like.
-    <br>
-    <br>
-    <button type="button" id="pickup-potion">Take Potion</button> <!-- Note to self: removed class="add-item" because it doesn't do anything -->
+    ThornesTowne, a small remote village. Surrounded by luscious green fields, it is nestled by the Crystal Rivers, which wrap around 
+    the Prickling Woods of the east province of Agraphyll. Despite being a small village, it's a bustling town that sees more traffic 
+    than most like it. ThornesTowne acts as a rest and stock-up point for most passing by, making most of its revenue off the plentiful
+    amount of crops that are grown and their high quality. Wheat, corn, and bagel-nuts, are just a few among the choices to pick from.
   </p>
+
+  <p>
+    The residents of ThornesTowne are just as friendly as the crops are good. People greet each other and passerby's with cheerful hellos
+    and smiles and food baskets for their neighbors. You often walk through the town, carrying your crops to shops and making deliveries.
+  </p>
+
+  <p>
+    After training for some time, you decide that it's finally time to go out and begin your adventure. You bid your farewells to your
+    parents and turn around and leave your childhood home. Walking through the town one last time, you also bid your farewells to your
+    fellow neighbors and residents, chatting happily before you move onto the next house. After making your last trip around ThornesTowne,
+    you walk towards the town gates. You take one last look behind you, taking in as much of your old home to remember as you can. 
+    With a heavy heart and a burning passion, you turn around and take your first step outside into the world.
+  </p>
+
+  <p>
+    As you step your first steps outside the gates of ThornesTowne, you take a breath of fresh air and look around you in excitement.
+    The tall, green grass reaches high above the ground, blocking most of what you can see besides the narrow dirt road. The sounds of
+    of rushing water from the Crystal Waters river can be heard off in the distance. The scenery is beautiful until your eyes land on
+    the Prickling Woods. Large, black and bare trees seem to reach towards the clouds as you gaze into the forest. So many trees are
+    packed tightly together all you can see is a few feet into the forest before the rest of it is replaced with pure darkness. You 
+    think you can hear sounds of animals, or something else, but you can't make out exactly what. With a soft shudder, you turn your
+    attention back to the main road and continue on your way. 
+  </p>
+    After what seems like hours of walking, you stumble upon a humble gnome who offers you a potion out of his little pouch on his belt. 
+    Before you can respond, he empties his bag in front of you and out poors a seemingly endless amount of what looks to be the same 
+    potion type. You can't tell what it is by it's color, and the gnome refuses to elabortate. You can take the potion, or as many as 
+    you would like to.    
+  </p>
+
+  <button type="button" id="pickup-potion" class="potion-pickup">Take Potion</button>
 
 
   <!-- Implemented sourcing a JavaScript file with ChatGPT (all the below code) -->
@@ -51,34 +69,33 @@
     </form>
   </div>
 
+  <!-- Redid button positioning with help from ChatGPT -->
   <!-- Bottom screen buttons -->
+  <div class="page-bottom-buttons">
+    <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
+    <div class="inventory-wrapper">
+      <button class="inventory-btn" id="inventory-button">Inventory</button>
 
-  <!-- Omitted Choice 1 button because I don't want any choices to be made here -->
-  <!-- <button class="route-one">Choice 1</button> -->
-  
-  <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
-  <div class="inventory-wrapper">
-    <button class="inventory-btn" id="inventory-button">Inventory</button>
-
-    <div id="inventory-panel" class="hidden">
-      <table id="inventory-table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody id="inventory-body">
-          <!-- Items from AWS will go here -->
-        </tbody>
-      </table>
+      <div id="inventory-panel" class="hidden">
+        <table id="inventory-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="inventory-body">
+            <!-- Items from AWS will go here -->
+          </tbody>
+        </table>
+      </div>
     </div>
-  </div>
 
-  <button class="back" onclick="document.location='index.html'">Back</button>
-  <button class="stats-btn">Stats</button>
-  <button class="route-two-intro" onclick="document.location='quest.html'">Next</button>
+    <button class="back" onclick="document.location='index.html'">Back</button>
+    <button class="stats-btn">Stats</button>
+    <button class="route-two-quest" onclick="document.location='quest.html'">Next</button>
+  </div>
 
   <script src="/js/inventory.js"></script>
   <!-- <script src="/js/itempickup.js"></script> -->

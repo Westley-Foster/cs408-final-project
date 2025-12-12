@@ -11,14 +11,20 @@ p {
 }
 
 /* Background image for intro.html */
-.intro-bg {
+.quest-bg {
   background-image: url(../img/Thornestown\ \(408\ Project\).png);
   background-size: cover;
   background-position: center center;
 }
 
 .add-container {
-  display: none;
+  width: 350px;
+  margin: 40px auto;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 6px;
+  /* background-color: #5f82a0; */
+  text-align: center;
 }
 
 /* Bottom CSS rules make the inventory button make a parchment like paper table and formats all buttons with even spacing. Created with ChatGPT */

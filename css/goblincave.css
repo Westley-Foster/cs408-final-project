@@ -18,7 +18,28 @@ p {
 }
 
 .add-container {
-  display: none;
+  width: 350px;
+  margin: 40px auto;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 6px;
+  /* background-color: #5f82a0; */
+  text-align: center;
+}
+
+/* Bottom CSS rules make the inventory button make a parchment like paper table and formats all buttons with even spacing. Created with ChatGPT */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /* even spacing */
+    align-items: center;
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 100;
 }
 
 /* Bottom CSS rules make the inventory button make a parchment like paper table and formats all buttons with even spacing. Created with ChatGPT */

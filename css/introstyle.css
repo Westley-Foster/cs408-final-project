@@ -7,7 +7,7 @@ p {
   margin-left: 100px;
   margin-right: 100px;
   text-align: center;
-  color: rgb(30, 144, 189);
+  color: black;
 }
 
 /* Background image for intro.html */
@@ -17,6 +17,21 @@ p {
   background-position: center center;
 }
 
+/* Fixed Take Potion alignment real quick with ChatGPT */
+.potion-pickup {
+    display: block;        /* makes it take its own line */
+    margin: 20px auto;     /* centers it horizontally and adds space above/below */
+    padding: 10px 20px;    /* optional padding */
+    font-size: 16px;       /* optional size */
+}
+
+/* Found button on-press with Google's AI Overview */
+.potion-pickup:active {
+    background-color: rgba(84, 84, 84, 0.25); /* Red when clicked */
+    transform: translateY(1px); /* Optional: gives a slight "press" effect */
+}
+
+/* Hides input form, but still keeps Inventory button functionality. Fixed with ChatGPT */
 .add-container {
   display: none;
 }
