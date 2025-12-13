@@ -61,6 +61,10 @@ Stretch goals for this kind of project span far and wide. It goes without saying
 
 - queststyle.css
     - Fixed button positioning with help from ChatGPT
+    - Added background art using Craiyon.com AI art generator
+
+- humming.css
+    - Added background art using Craiyon.com AI art generator
 
 - character.js
     - Wrote entirety of character.js with help from ChatGPT
