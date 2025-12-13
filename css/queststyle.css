@@ -7,12 +7,12 @@ p {
   margin-left: 100px;
   margin-right: 100px;
   text-align: center;
-  color: rgb(30, 144, 189);
+  color: rgb(255, 255, 255);
 }
 
-/* Background image for intro.html */
+/* Background image - created with Craiyon.com AI art generator */
 .quest-bg {
-  background-image: url(../img/Thornestown\ \(408\ Project\).png);
+  background-image: url(../img/new_outerfields.png);
   background-size: cover;
   background-position: center center;
 }
@@ -23,7 +23,7 @@ p {
   padding: 25px;
   border: 1px solid black;
   border-radius: 6px;
-  /* background-color: #5f82a0; */
+  background-color: rgba(120, 156, 106, 0.25);
   text-align: center;
 }
 
@@ -37,7 +37,6 @@ p {
     justify-content: space-around; /* evenly spaced */
     align-items: center;
     padding: 15px 0;
-    background: rgba(255, 255, 255, 0.6); /* optional — remove if unwanted */
     backdrop-filter: blur(4px);
     z-index: 200;
 }
@@ -49,7 +48,7 @@ p {
 }
 
 .page-bottom-buttons button:active {
-    background-color: rgba(84, 84, 84, 0.25); /* Red when clicked */
+    background-color: rgba(84, 84, 84, 0.25);
     transform: translateY(1px); /* Optional: gives a slight "press" effect */
 }
 

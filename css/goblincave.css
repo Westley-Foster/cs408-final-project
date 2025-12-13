@@ -10,9 +10,9 @@ p {
   color: rgb(30, 144, 189);
 }
 
-/* Background image for intro.html */
-.intro-bg {
-  background-image: url(../img/Thornestown\ \(408\ Project\).png);
+/* Cave background image (drawn by me) */
+.cave-bg {
+  background-image: url(../img/light_cave.png);
   background-size: cover;
   background-position: center center;
 }
@@ -31,9 +31,28 @@ p {
     justify-content: space-around; /* even spacing */
     align-items: center;
     padding: 15px 0;
-    background: rgba(255, 255, 255, 0.6);
+    /* background: rgba(255, 255, 255, 0.6); */
     backdrop-filter: blur(4px);
     z-index: 100;
+}
+
+/* Buttons keep original size & styles */
+.page-bottom-buttons button {
+    position: static !important;
+    margin: 0 !important;
+}
+
+.bottom-menu button {
+  background-color: rgb(208, 208, 208)
+}
+
+.bottom-menu button:hover {
+  background-color: rgb(178, 175, 175);
+}
+
+.bottom-menu button:active {
+    background-color: rgba(84, 84, 84, 0.868);
+    transform: translateY(1px); /* Optional: gives a slight "press" effect */
 }
 
 /* Bottom CSS rules make the inventory button make a parchment like paper table and formats all buttons with even spacing. Created with ChatGPT */
@@ -51,16 +70,7 @@ p {
     z-index: 200;
 }
 
-/* Buttons keep original size & styles */
-.page-bottom-buttons button {
-    position: static !important;
-    margin: 0 !important;
-}
 
-.page-bottom-buttons button:active {
-    background-color: rgba(84, 84, 84, 0.25); /* Red when clicked */
-    transform: translateY(1px); /* Optional: gives a slight "press" effect */
-}
 
 /* Inventory wrapper is NOT fixed. It just sits inside the bottom flex bar */
 .inventory-wrapper {

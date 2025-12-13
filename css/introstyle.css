@@ -7,12 +7,12 @@ p {
   margin-left: 100px;
   margin-right: 100px;
   text-align: center;
-  color: black;
+  color: rgb(246, 244, 244);
 }
 
-/* Background image for intro.html */
+/* Background image */
 .intro-bg {
-  background-image: url(../img/Thornestown\ \(408\ Project\).png);
+  background-image: url(../img/new_Thornestown.png);
   background-size: cover;
   background-position: center center;
 }
@@ -27,7 +27,7 @@ p {
 
 /* Found button on-press with Google's AI Overview */
 .potion-pickup:active {
-    background-color: rgba(84, 84, 84, 0.25); /* Red when clicked */
+    background-color: rgba(84, 84, 84, 0.25);
     transform: translateY(1px); /* Optional: gives a slight "press" effect */
 }
 
