@@ -74,7 +74,7 @@
   <div class="page-bottom-buttons">
     <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
     <div class="inventory-wrapper">
-      <button class="inventory-btn" id="inventory-button">Inventory</button>
+      <button id="inventory-button">Inventory</button>
 
       <div id="inventory-panel" class="hidden">
         <table id="inventory-table">
@@ -92,13 +92,12 @@
       </div>
     </div>
 
-    <button class="back" onclick="document.location='index.html'">Back</button>
-    <button class="stats-btn">Stats</button>
-    <button class="route-two-quest" onclick="document.location='quest.html'">Next</button>
+    <button onclick="document.location='index.html'">Back</button>
+    <button>Stats</button>
+    <button onclick="document.location='quest.html'">Continue</button>
   </div>
 
   <script src="/js/inventory.js"></script>
-  <!-- <script src="/js/itempickup.js"></script> -->
 </body>
 
 </html>

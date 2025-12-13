@@ -44,12 +44,6 @@ body > p {
     overflow: visible;     /* hide overflow */
 }
 
-/* Center buttons found with help from ChatGPT (currently unused) */
-/* .center-class-choice {
-  display: block;
-  margin: 10px auto 0;
-} */
-
 /* Found button alignment on bottom-right of screen with Google's AI Overview */
 .route-two-index {
   position: fixed;

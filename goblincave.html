@@ -13,15 +13,47 @@
   <h1>Goblin Cave</h1>
 
   <p>
-    Shaking your head, you turn away from the emanating light and the alluring sound of the humming. You walk forwards and towards
-    the cave entrance as the sound of the humming becomes fainter and fainter before you can no longer hear it.
+    Shaking your head, you turn away from the emanating light and the alluring sound of the humming. You walk towards the cave entrance 
+    as the sound of the humming becomes fainter and fainter before you can no longer hear it.
   </p>
 
   <p>
     Stepping up to the cave's entrance, you find a smouldering fire. Somebody was just here. Surrounding the fire are destroyed wooden 
-    boxes and other debris. You quickly gather that there was some kind of commotion that took place here. You look up at the mouth 
+    crates and other debris. You quickly gather that there was some kind of commotion that took place here. You look up at the mouth 
     of the cave. You can't see anything but pure darkness. As you squint your eyes trying to see something, anything, you hear a loud
-    cackling noise followed by a chorus of harsh laughter.
+    cackling noise followed by a chorus of harsh laughter. You take a heavy breath and steel yourself as you light a small torch and 
+    make your way inside the cave.
+  </p>
+
+  <p>
+    Despite the light of your torch, darkness still seems to overtake you and you can't see much more than a few feet in front of you.
+    You feel your way through the cave using the cave walls. The cave walls are cold, rough, and scratchy as if blades have been run
+    across them many times. The smell of the cave is rancid and often find yourself holding your nose in your shirt as you traverse the
+    cave.
+  </p>
+
+  <p>
+    After walking for some time, you can barely make out a few figures in the darkness, their backs turned to you. You look around 
+    hurriedly and find a corner to hide behind. From the corner, you can hear talking with loud scratchy voices in a language that 
+    sounds like incoherent babbling. The sound of a creaky wooden door opens and closes shut with a loud, snapping noise. Stepping 
+    out from behind the corner, you walk towards the door. Holding your torch in front of you, you get up to the old, nearly broken,
+    door. It's extremely small as if it were designed for a farm of pigs. You grab the handle and pull gently. The door creaks open
+    ever so slightly with what seems like a deafening creak. You wait for a moment, expecting a horde of goblins to come charging your 
+    way. Thankfully, nothing comes rushing through the cave halls. 
+  </p>
+
+  <p>
+    Before walking past the door, you notice to your left a small hole in the wall. It looks big enough to maybe crawl through, but 
+    it would definitely be a tight fit. You kneel down, pushing the torch into the hole to see if it has an end. The dimly lit walls
+    of the crawlspace reveal what looks to be an exit. Suddenly, you hear a few soft steps coming from the end of the crawlspace before
+    seeing a few pairs of small, green and hairy feet pass by. You pull back the torch from the hole, not wanting to give away your 
+    position to any curious goblins.
+  </p>
+
+  <p>
+    After a comfortable amount of time has passed, you feel safer about exploring the small crawlspace. You look towards the door that 
+    the figures from earlier went through and then back down to the crawlspace. The door seems like a more comfortable route to take,
+    but you also might find something else at the end of the tight tunnel as well. 
   </p>
 
   <!-- ADD ITEM SECTION -->
@@ -44,33 +76,32 @@
 
   <!-- Table opening above inventory button when clicked written with help from ChatGPT -->
 
+  <div class="bottom-menu">
+    <button>Crawl through the tunnel</button>
 
-<div class="bottom-menu">
     <div class="inventory-wrapper">
-        <button class="inventory-btn" id="inventory-button">Inventory</button>
+      <button class="inventory-btn" id="inventory-button">Inventory</button>
 
-        <div id="inventory-panel" class="hidden">
-            <table id="inventory-table">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody id="inventory-body"></tbody>
+      <div id="inventory-panel" class="hidden">
+        <table id="inventory-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="inventory-body"></tbody>
             </table>
         </div>
     </div>
 
-    <button class="back" onclick="document.location='quest.html'">Back</button>
-
-    <button class="stats-btn">Stats</button>
-</div>
+    <button onclick="document.location='quest.html'">Back</button>
+    <button>Stats</button>
+    <button>Take the door</button>
+  </div>
 
   <script src="/js/inventory.js"></script>
-  <!-- <script src="/js/itempickup.js"></script> -->
-
 </body>
 
 </html>

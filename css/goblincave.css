@@ -18,13 +18,7 @@ p {
 }
 
 .add-container {
-  width: 350px;
-  margin: 40px auto;
-  padding: 25px;
-  border: 1px solid black;
-  border-radius: 6px;
-  /* background-color: #5f82a0; */
-  text-align: center;
+  display: none;
 }
 
 /* Bottom CSS rules make the inventory button make a parchment like paper table and formats all buttons with even spacing. Created with ChatGPT */
